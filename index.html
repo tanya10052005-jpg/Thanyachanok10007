@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazing Thailand 1 ภาค 1 จังหวัด ไม่ไปไม่รู้ | สัมผัสมนต์เสน่ห์ไทย 6 ภูมิภาค</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="สัมผัสเสน่ห์การท่องเที่ยวไทย 6 ภูมิภาค กับ 6 จังหวัดไฮไลต์ที่ห้ามพลาด: เชียงใหม่ ขอนแก่น อยุธยา ภูเก็ต ชลบุรี และกาญจนบุรี พร้อมพิกัดจริงและร้านอาหารขึ้นชื่อ">
+  <meta name="keywords" content="Amazing Thailand, เที่ยวไทย, 1 ภาค 1 จังหวัด, เชียงใหม่, ขอนแก่น, อยุธยา, ภูเก็ต, ชลบุรี, กาญจนบุรี">
+  <meta property="og:title" content="Amazing Thailand 1 ภาค 1 จังหวัด ไม่ไปไม่รู้">
+  <meta property="og:description" content="ร่วมออกเดินทางสัมผัสมนต์เสน่ห์ 6 ภาค 6 จังหวัดอันเป็นเอกลักษณ์ของประเทศไทย">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon Icon (Cultural Heritage Emblem) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇹🇭</text></svg>">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sand: {
+              50: '#FDFBF7',
+              100: '#FAF7F2',
+              200: '#F4EFE6',
+              300: '#EDE4D7',
+              400: '#E3D7C7',
+            },
+            earth: {
+              brown: '#8C6D58',
+              dark: '#52433B',
+              coffee: '#2C221E',
+              terracotta: '#A26744',
+              terracottaHover: '#824F31',
+              olive: '#5C6F54',
+            }
+          },
+          fontFamily: {
+            heading: ['Prompt', 'sans-serif'],
+            body: ['Sarabun', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Cozy Earth Tone Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#FAF7F2] text-[#2C221E] min-h-screen flex flex-col font-body antialiased selection:bg-[#A26744]/20 selection:text-[#2C221E]">
+
+  <!-- =========================================================================
+       SECTION 1: NAVIGATION BAR
+       ========================================================================= -->
+  <header class="sticky top-0 z-40 w-full nav-glass transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo & Title -->
+        <a href="#hero" class="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#A26744] rounded-lg p-1">
+          <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-[#A26744] to-[#C88A58] flex items-center justify-center text-white shadow-md transform group-hover:rotate-6 transition-transform">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2L1 21h22L12 2zm0 3.84L19.5 19H4.5L12 5.84zM11 10h2v4h-2zm0 5h2v2h-2z"/>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-heading font-extrabold text-xl tracking-tight text-[#2C221E] group-hover:text-[#A26744] transition-colors leading-none">
+              Amazing Thailand
+            </span>
+            <span class="text-xs font-medium text-[#8C6D58] tracking-wider mt-1">
+              1 ภาค 1 จังหวัด ไม่ไปไม่รู้
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-8" aria-label="Main Navigation">
+          <a href="#hero" class="text-sm font-heading font-medium text-[#2C221E] hover:text-[#A26744] transition-colors py-2 border-b-2 border-transparent hover:border-[#A26744]">
+            หน้าแรก
+          </a>
+          <a href="#provinces" class="text-sm font-heading font-medium text-[#2C221E] hover:text-[#A26744] transition-colors py-2 border-b-2 border-transparent hover:border-[#A26744]">
+            แนะนำ 6 จังหวัด
+          </a>
+          <a href="#highlights" class="text-sm font-heading font-medium text-[#2C221E] hover:text-[#A26744] transition-colors py-2 border-b-2 border-transparent hover:border-[#A26744]">
+            ไฮไลต์การเดินทาง
+          </a>
+          <a href="#about" class="text-sm font-heading font-medium text-[#2C221E] hover:text-[#A26744] transition-colors py-2 border-b-2 border-transparent hover:border-[#A26744]">
+            เกี่ยวกับโครงการ
+          </a>
+        </nav>
+
+        <!-- CTA Button in Navbar -->
+        <div class="hidden md:flex items-center gap-3">
+          <a href="#provinces" class="btn-primary px-5 py-2.5 rounded-full text-xs font-heading font-semibold inline-flex items-center gap-2">
+            <span>เริ่มออกเดินทาง</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button (Hamburger) -->
+        <div class="flex md:hidden">
+          <button 
+            type="button" 
+            id="mobile-menu-btn" 
+            aria-expanded="false" 
+            aria-controls="mobile-nav" 
+            aria-label="เปิดเมนูนำทาง"
+            class="p-2.5 rounded-xl text-[#2C221E] bg-[#F4EFE6] hover:bg-[#EDE4D7] border border-[#E3D7C7] focus:outline-none focus:ring-2 focus:ring-[#A26744]"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav" class="hidden md:hidden border-b border-[#E3D7C7] bg-[#FAF7F2] px-4 pt-3 pb-6 shadow-lg">
+      <nav class="flex flex-col space-y-3 font-heading text-sm">
+        <a href="#hero" class="mobile-link py-2.5 px-3 rounded-lg text-[#2C221E] hover:bg-[#F4EFE6] font-medium">
+          🏠 หน้าแรก
+        </a>
+        <a href="#provinces" class="mobile-link py-2.5 px-3 rounded-lg text-[#2C221E] hover:bg-[#F4EFE6] font-medium">
+          🗺️ แนะนำ 6 จังหวัด 6 ภาค
+        </a>
+        <a href="#highlights" class="mobile-link py-2.5 px-3 rounded-lg text-[#2C221E] hover:bg-[#F4EFE6] font-medium">
+          ✨ ไฮไลต์การเดินทาง
+        </a>
+        <a href="#about" class="mobile-link py-2.5 px-3 rounded-lg text-[#2C221E] hover:bg-[#F4EFE6] font-medium">
+          ℹ️ เกี่ยวกับโครงการ
+        </a>
+        <div class="pt-2">
+          <a href="#provinces" class="mobile-link btn-primary w-full py-3 rounded-xl text-center text-xs font-semibold block">
+            เลือกชม 6 จังหวัดเด่น
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       SECTION 2: HERO SECTION
+       ========================================================================= -->
+  <section id="hero" class="relative min-h-[82vh] flex items-center justify-center overflow-hidden">
+    <!-- Hero Background Image with Earth-Tone Filter -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?auto=format&fit=crop&w=2000&q=85" 
+        alt="ทิวทัศน์ธรรมชาติและหมอกยามเช้าของประเทศไทย" 
+        class="w-full h-full object-cover object-center transform scale-105"
+      >
+      <!-- Warm cozy overlay -->
+      <div class="absolute inset-0 bg-gradient-to-t from-[#2C221E]/95 via-[#2C221E]/75 to-[#2C221E]/60 mix-blend-multiply"></div>
+      <div class="absolute inset-0 bg-amber-950/20 backdrop-blur-[1px]"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center text-white">
+      
+      <!-- Top Campaign Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FAF7F2]/20 border border-white/30 backdrop-blur-md mb-6 shadow-sm">
+        <span class="text-sm">🇹🇭</span>
+        <span class="text-xs font-heading font-medium tracking-wider text-amber-100 uppercase">
+          โครงการส่งเสริมการท่องเที่ยวไทย ประจำปี 2567-2568
+        </span>
+      </div>
+
+      <!-- Main Heading & Slogan -->
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold font-heading tracking-tight mb-4 drop-shadow-lg leading-tight">
+        Amazing Thailand
+      </h1>
+      <p class="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-amber-200 mb-6 drop-shadow-md">
+        “1 ภาค 1 จังหวัด ไม่ไปไม่รู้”
+      </p>
+
+      <!-- Descriptive Pitch -->
+      <p class="text-base sm:text-lg lg:text-xl text-[#F4EFE6] max-w-3xl mx-auto font-light leading-relaxed mb-10 drop-shadow">
+        เปิดประตูสู่วัฒนธรรมล้ำค่า รสชาติท้องถิ่นที่ไม่อาจลืมเลือน และธรรมชาติอันบริสุทธิ์ 
+        ผ่าน 6 จังหวัดตัวแทน 6 ภูมิภาคที่คัดสรรมาแล้วว่า “ถ้าไม่ได้ไปสัมผัสด้วยตาตนเอง... คุณจะไม่มีวันรู้”
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a 
+          href="#provinces" 
+          class="btn-primary w-full sm:w-auto px-8 py-4 rounded-full font-heading font-semibold text-base flex items-center justify-center gap-3 shadow-lg cursor-pointer"
+        >
+          <span>เริ่มต้นการเดินทาง</span>
+          <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+          </svg>
+        </a>
+        <a 
+          href="#about" 
+          class="w-full sm:w-auto px-8 py-4 rounded-full bg-white/15 hover:bg-white/25 text-white border border-white/40 font-heading font-medium text-base backdrop-blur-md transition-all flex items-center justify-center gap-2 cursor-pointer"
+        >
+          <span>ข้อมูลโครงการ</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Quick Feature Counters -->
+      <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8 border-t border-white/20">
+        <div class="text-center p-2">
+          <div class="text-2xl sm:text-3xl font-extrabold font-heading text-amber-200">6 ภูมิภาค</div>
+          <div class="text-xs text-white/80 mt-1 font-light">เหนือ • อีสาน • กลาง • ใต้ • ตะวันออก • ตะวันตก</div>
+        </div>
+        <div class="text-center p-2">
+          <div class="text-2xl sm:text-3xl font-extrabold font-heading text-amber-200">24+ แห่ง</div>
+          <div class="text-xs text-white/80 mt-1 font-light">สถานที่ท่องเที่ยวสำคัญพิกัดจริง</div>
+        </div>
+        <div class="text-center p-2">
+          <div class="text-2xl sm:text-3xl font-extrabold font-heading text-amber-200">18+ ร้าน</div>
+          <div class="text-xs text-white/80 mt-1 font-light">ร้านอาหารขึ้นชื่อ & มิชลินไกด์</div>
+        </div>
+        <div class="text-center p-2">
+          <div class="text-2xl sm:text-3xl font-extrabold font-heading text-amber-200">100%</div>
+          <div class="text-xs text-white/80 mt-1 font-light">เชื่อมต่อ Google Maps นำทางตรง</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 3: 6 PROVINCES SECTION (CARDS & REGION FILTER)
+       ========================================================================= -->
+  <main class="flex-grow">
+    <section id="provinces" class="py-20 earth-pattern">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#F4EFE6] border border-[#E3D7C7] text-[#8C6D58] text-xs font-semibold mb-3">
+            <span>✨</span>
+            <span>DESTINATIONS HIGHLIGHT</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-[#2C221E] tracking-tight mb-4">
+            คัดสรร 6 จังหวัดเด่นจาก 6 ภูมิภาค
+          </h2>
+          <p class="text-base text-[#52433B] leading-relaxed">
+            สัมผัสอัตลักษณ์ทางวัฒนธรรม แหล่งธรรมชาติอันอุดมสมบูรณ์ และเมนูจานเด็ดประจำถิ่น 
+            คลิกที่การ์ดเพื่อเปิดดูข้อมูลละเอียด พิกัด และร้านอาหารขึ้นชื่อ
+          </p>
+        </div>
+
+        <!-- Region Filter Pills -->
+        <div class="flex items-center justify-start md:justify-center gap-2 overflow-x-auto pb-4 mb-10 no-scrollbar" role="tablist" aria-label="กรองภูมิภาค">
+          <button 
+            type="button" 
+            class="filter-btn active px-4 py-2 rounded-full text-xs font-heading font-medium bg-white text-[#2C221E] border border-[#E3D7C7] cursor-pointer"
+            data-filter="all"
+          >
+            แสดงทั้งหมด (6 จังหวัด)
+          </button>
+          <button 
+            type="button" 
+            class="filter-btn px-4 py-2 rounded-full text-xs font-heading font-medium bg-white text-[#2C221E] border border-[#E3D7C7] cursor-pointer"
+            data-filter="ภาคเหนือ"
+          >
+            ภาคเหนือ (เชียงใหม่)
+          </button>
+          <button 
+            type="button" 
+            class="filter-btn px-4 py-2 rounded-full text-xs font-heading font-medium bg-white text-[#2C221E] border border-[#E3D7C7] cursor-pointer"
+            data-filter="ภาคตะวันออกเฉียงเหนือ"
+          >
+            ภาคอีสาน (ขอนแก่น)
+          </button>
+          <button 
+            type="button" 
+            class="filter-btn px-4 py-2 rounded-full text-xs font-heading font-medium bg-white text-[#2C221E] border border-[#E3D7C7] cursor-pointer"
+            data-filter="ภาคกลาง"
+          >
+            ภาคกลาง (อยุธยา)
+          </button>
+          <button 
+            type="button" 
+            class="filter-btn px-4 py-2 rounded-full text-xs font-heading font-medium bg-white text-[#2C221E] border border-[#E3D7C7] cursor-pointer"
+            data-filter="ภาคใต้"
+          >
+            ภาคใต้ (ภูเก็ต)
+          </button>
+          <button 
+            type="button" 
+            class="filter-btn px-4 py-2 rounded-full text-xs font-heading font-medium bg-white text-[#2C221E] border border-[#E3D7C7] cursor-pointer"
+            data-filter="ภาคตะวันออก"
+          >
+            ภาคตะวันออก (ชลบุรี)
+          </button>
+          <button 
+            type="button" 
+            class="filter-btn px-4 py-2 rounded-full text-xs font-heading font-medium bg-white text-[#2C221E] border border-[#E3D7C7] cursor-pointer"
+            data-filter="ภาคตะวันตก"
+          >
+            ภาคตะวันตก (กาญจนบุรี)
+          </button>
+        </div>
+
+        <!-- Dynamic Cards Grid Container -->
+        <div id="provinces-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Rendered dynamically by script.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION: TRAVEL HIGHLIGHTS / VALUE PROPOSITION
+         ========================================================================= -->
+    <section id="highlights" class="py-20 bg-[#F4EFE6] border-y border-[#E3D7C7]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-xs font-heading font-semibold text-[#8C6D58] tracking-widest uppercase">
+            WHY TRAVEL WITH US
+          </span>
+          <h2 class="text-3xl font-bold font-heading text-[#2C221E] mt-2 mb-4">
+            มาตรฐานข้อมูลเพื่อนักเดินทางตัวจริง
+          </h2>
+          <p class="text-sm text-[#52433B]">
+            เว็บไซต์นี้ถูกออกแบบขึ้นเพื่อตอบสนองความต้องการวางแผนท่องเที่ยวอย่างมีคุณภาพ แม่นยำ และสร้างแรงบันดาลใจ
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <div class="bg-white p-8 rounded-2xl border border-[#E3D7C7] shadow-xs flex flex-col items-center text-center">
+            <div class="w-14 h-14 rounded-2xl bg-[#FAF7F2] border border-[#E3D7C7] text-[#A26744] flex items-center justify-center text-2xl mb-5 shadow-xs">
+              📍
+            </div>
+            <h3 class="font-heading font-bold text-lg text-[#2C221E] mb-2">
+              พิกัดจริงระดับตำบล-อำเภอ
+            </h3>
+            <p class="text-sm text-[#52433B] leading-relaxed">
+              ไม่มีการสมมุติข้อมูล ทุกสถานที่ระบุชื่อทางการ ตำบล อำเภอ และจังหวัดอย่างถูกต้องตามทะเบียนราษฎร์และฐานข้อมูลการท่องเที่ยว
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="bg-white p-8 rounded-2xl border border-[#E3D7C7] shadow-xs flex flex-col items-center text-center">
+            <div class="w-14 h-14 rounded-2xl bg-[#FAF7F2] border border-[#E3D7C7] text-[#5C6F54] flex items-center justify-center text-2xl mb-5 shadow-xs">
+              🗺️
+            </div>
+            <h3 class="font-heading font-bold text-lg text-[#2C221E] mb-2">
+              เชื่อมโยง Google Maps แม่นยำ
+            </h3>
+            <p class="text-sm text-[#52433B] leading-relaxed">
+              เพียงแตะปุ่ม "นำทางด้วย Google Maps" บนมือถือหรือคอมพิวเตอร์ ระบบจะเปิดแอปพลิเคชันนำทางตรงสู่เป้าหมายทันที ไม่หลงทาง
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="bg-white p-8 rounded-2xl border border-[#E3D7C7] shadow-xs flex flex-col items-center text-center">
+            <div class="w-14 h-14 rounded-2xl bg-[#FAF7F2] border border-[#E3D7C7] text-[#A26744] flex items-center justify-center text-2xl mb-5 shadow-xs">
+              🍲
+            </div>
+            <h3 class="font-heading font-bold text-lg text-[#2C221E] mb-2">
+              รสชาติแท้ & การันตีรางวัล
+            </h3>
+            <p class="text-sm text-[#52433B] leading-relaxed">
+              คัดสรรร้านอาหารระดับตำนานท้องถิ่นและร้านที่ได้รับคัดเลือกใน Michelin Guide Thailand พร้อมเมนูที่ต้องสั่งเมื่อไปถึง
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION: ABOUT PROJECT
+         ========================================================================= -->
+    <section id="about" class="py-20 bg-[#FAF7F2]">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-3xl p-8 sm:p-12 border border-[#E3D7C7] shadow-sm">
+          <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="w-full md:w-1/3 text-center md:text-left">
+              <div class="inline-block p-4 rounded-3xl bg-[#F4EFE6] text-5xl mb-4 border border-[#E3D7C7]">
+                🇹🇭
+              </div>
+              <h3 class="text-2xl font-bold font-heading text-[#2C221E]">
+                Amazing Thailand
+              </h3>
+              <p class="text-xs font-semibold text-[#8C6D58] uppercase tracking-wider mt-1">
+                Educational Project 2026
+              </p>
+            </div>
+            <div class="w-full md:w-2/3 border-t md:border-t-0 md:border-l border-[#E3D7C7] pt-6 md:pt-0 md:pl-8 space-y-4 text-sm text-[#52433B]">
+              <h4 class="text-base font-bold font-heading text-[#2C221E]">
+                เกี่ยวกับโครงการ “1 ภาค 1 จังหวัด ไม่ไปไม่รู้”
+              </h4>
+              <p class="leading-relaxed">
+                เว็บไซต์นี้ถูกพัฒนาขึ้นเพื่อเป็นสื่อดิจิทัลประชาสัมพันธ์การท่องเที่ยวแห่งประเทศไทย 
+                โดยนำเสนอตัวแทนจังหวัดเด่นจาก 6 ภูมิภาคหลัก เพื่อส่งเสริมให้คนไทยและนักท่องเที่ยวได้ออกเดินทางค้นพบเสน่ห์ความหลากหลายทางวัฒนธรรม 
+                วิถีชีวิต และอาหารการกินอันเป็นมรดกอันล้ำค่าของชาติ
+              </p>
+              <div class="p-4 rounded-xl bg-[#FAF7F2] border border-[#E3D7C7] text-xs space-y-1.5">
+                <p class="font-semibold text-[#2C221E]">💻 เทคโนโลยีที่ใช้พัฒนา (Technical Stack):</p>
+                <p class="text-[#8C6D58]">
+                  • <strong>HTML5:</strong> โครงสร้างแบบ Semantic เข้าถึงง่าย (Accessibility)<br>
+                  • <strong>Tailwind CSS & CSS3:</strong> สไตล์ Cozy Earth Tone นุ่มนวล สบายตา Responsive 100%<br>
+                  • <strong>Vanilla JavaScript:</strong> การควบคุม Interactive Modal, State กรองภูมิภาค และ Keyboard Navigation
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       SECTION 4: INTERACTIVE DETAIL MODAL
+       ========================================================================= -->
+  <div 
+    id="province-modal" 
+    class="fixed inset-0 z-50 overflow-y-auto bg-stone-900/65 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6" 
+    role="dialog" 
+    aria-modal="true" 
+    aria-labelledby="modal-title"
+  >
+    <div 
+      id="modal-dialog" 
+      class="relative w-full max-w-4xl bg-[#FAF7F2] rounded-3xl shadow-2xl border border-[#E3D7C7] overflow-hidden my-auto"
+    >
+      <!-- Modal Close Button ('X') -->
+      <button 
+        type="button" 
+        id="modal-close-btn" 
+        class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-[#FAF7F2]/90 hover:bg-[#FAF7F2] text-[#2C221E] hover:text-[#A26744] flex items-center justify-center shadow-md backdrop-blur-md transition-all focus:outline-none focus:ring-2 focus:ring-[#A26744] cursor-pointer"
+        aria-label="ปิดหน้าต่างรายละเอียด"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+
+      <!-- Dynamic Content Injection Container -->
+      <div id="modal-dynamic-content" class="modal-scrollable">
+        <!-- Rendered dynamically by script.js openModal() -->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       SECTION 5: FOOTER
+       ========================================================================= -->
+  <footer id="footer" class="bg-[#2C221E] text-[#EDE4D7] pt-16 pb-12 border-t border-[#4A3B32]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-[#4A3B32]/70">
+        
+        <!-- Column 1: Brand & Slogan -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-[#A26744] flex items-center justify-center text-white font-bold">
+              TH
+            </div>
+            <span class="font-heading font-extrabold text-xl text-white tracking-wide">
+              Amazing Thailand
+            </span>
+          </div>
+          <p class="text-xs text-[#C5B7A6] font-light leading-relaxed">
+            “1 ภาค 1 จังหวัด ไม่ไปไม่รู้” ร่วมสัมผัสความมหัศจรรย์แห่งแดนสยาม 
+            เปิดประสบการณ์ใหม่ในทุกย่างก้าวทั่ว 6 ภูมิภาค
+          </p>
+          <div class="text-xs text-[#A26744] font-medium">
+            #AmazingThailand #เที่ยวไทยเท่ #1ภาค1จังหวัด
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links to 6 Provinces -->
+        <div>
+          <h4 class="font-heading font-bold text-sm text-white uppercase tracking-wider mb-4">
+            6 จังหวัดไฮไลต์
+          </h4>
+          <ul class="space-y-2 text-xs text-[#C5B7A6]">
+            <li>
+              <button type="button" onclick="openModal('chiang-mai')" class="hover:text-amber-200 transition-colors flex items-center gap-1.5 cursor-pointer">
+                <span>🌲 ภาคเหนือ:</span> <strong class="text-white">เชียงใหม่</strong>
+              </button>
+            </li>
+            <li>
+              <button type="button" onclick="openModal('khon-kaen')" class="hover:text-amber-200 transition-colors flex items-center gap-1.5 cursor-pointer">
+                <span>🌾 ภาคอีสาน:</span> <strong class="text-white">ขอนแก่น</strong>
+              </button>
+            </li>
+            <li>
+              <button type="button" onclick="openModal('ayutthaya')" class="hover:text-amber-200 transition-colors flex items-center gap-1.5 cursor-pointer">
+                <span>🏛️ ภาคกลาง:</span> <strong class="text-white">พระนครศรีอยุธยา</strong>
+              </button>
+            </li>
+            <li>
+              <button type="button" onclick="openModal('phuket')" class="hover:text-amber-200 transition-colors flex items-center gap-1.5 cursor-pointer">
+                <span>🌊 ภาคใต้:</span> <strong class="text-white">ภูเก็ต</strong>
+              </button>
+            </li>
+            <li>
+              <button type="button" onclick="openModal('chonburi')" class="hover:text-amber-200 transition-colors flex items-center gap-1.5 cursor-pointer">
+                <span>⛵ ภาคตะวันออก:</span> <strong class="text-white">ชลบุรี</strong>
+              </button>
+            </li>
+            <li>
+              <button type="button" onclick="openModal('kanchanaburi')" class="hover:text-amber-200 transition-colors flex items-center gap-1.5 cursor-pointer">
+                <span>🚂 ภาคตะวันตก:</span> <strong class="text-white">กาญจนบุรี</strong>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Tourism Authorities & Emergency -->
+        <div>
+          <h4 class="font-heading font-bold text-sm text-white uppercase tracking-wider mb-4">
+            ข้อมูลนักท่องเที่ยว
+          </h4>
+          <ul class="space-y-2.5 text-xs text-[#C5B7A6]">
+            <li class="flex items-center gap-2">
+              <span class="text-[#A26744]">📞</span>
+              <span>สายด่วนท่องเที่ยว: <strong>1672 (ททท.)</strong></span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-[#A26744]">👮</span>
+              <span>ตำรวจท่องเที่ยว: <strong>1155</strong></span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-[#A26744]">🌐</span>
+              <a href="https://www.tourismthailand.org" target="_blank" rel="noopener noreferrer" class="hover:text-white underline">
+                tourismthailand.org
+              </a>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-[#A26744]">🗺️</span>
+              <span>Google Maps Platform Integration</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Academic Disclaimer Note -->
+        <div>
+          <h4 class="font-heading font-bold text-sm text-white uppercase tracking-wider mb-4">
+            ข้อสงวนสิทธิ์เพื่อการศึกษา
+          </h4>
+          <p class="text-xs text-[#C5B7A6] leading-relaxed">
+            เว็บไซต์นี้จัดทำขึ้นเพื่อการศึกษาและการประชาสัมพันธ์การท่องเที่ยวเท่านั้น 
+            รูปภาพและข้อมูลอ้างอิงจากแหล่งข้อมูลสาธารณะและหน่วยงานทางการ 
+            พร้อมรองรับการนำไปปรับใช้และนำเสนอผลงานระดับสากล
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Credits & Copyright -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#8C6D58] gap-4">
+        <div>
+          © 2026 Amazing Thailand: 1 ภาค 1 จังหวัด ไม่ไปไม่รู้ • พัฒนาด้วยความภาคภูมิใจ
+        </div>
+        <div class="flex items-center gap-4">
+          <span>Cozy Earth Tone Theme</span>
+          <span>•</span>
+          <span>HTML5 / Tailwind CSS / Vanilla JS</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       FLOATING ACTION: BACK TO TOP BUTTON
+       ========================================================================= -->
+  <button 
+    type="button" 
+    id="back-to-top" 
+    class="fixed bottom-6 right-6 z-30 p-3.5 rounded-full bg-[#A26744] hover:bg-[#824F31] text-white shadow-xl transition-all duration-300 opacity-0 pointer-events-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#A26744]"
+    aria-label="เลื่อนกลับสู่ด้านบนสุดของหน้าเว็บ"
+  >
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+    </svg>
+  </button>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>

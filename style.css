@@ -1,0 +1,214 @@
+/* ==========================================================================
+   Amazing Thailand: 1 ภาค 1 จังหวัด ไม่ไปไม่รู้
+   Cozy Earth Tone Custom Stylesheet
+   ========================================================================== */
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Sarabun:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  /* Cozy Earth Tone Color Palette */
+  --color-warm-sand: #FAF7F2;
+  --color-cream: #F4EFE6;
+  --color-beige: #EDE4D7;
+  --color-border: #E3D7C7;
+  --color-muted-brown: #8C6D58;
+  --color-terracotta: #A26744;
+  --color-terracotta-dark: #824F31;
+  --color-olive-earth: #5C6F54;
+  --color-coffee: #2C221E;
+  --color-coffee-light: #52433B;
+  --font-heading: 'Prompt', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body: 'Sarabun', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Base Configuration */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-body);
+  color: var(--color-coffee);
+  background-color: var(--color-warm-sand);
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-warm-sand);
+  color: var(--color-coffee);
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-heading);
+  letter-spacing: -0.01em;
+}
+
+/* Custom Scrollbar - Earth Tone Style */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-muted-brown);
+  border-radius: 9999px;
+  border: 2px solid var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-terracotta);
+}
+
+/* Body Scroll Lock when Modal is Active */
+body.modal-open {
+  overflow: hidden;
+  padding-right: 9px; /* Prevent layout shift */
+}
+
+/* Glassmorphism Navigation */
+.nav-glass {
+  background-color: rgba(250, 247, 242, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(227, 215, 199, 0.7);
+}
+
+/* Card Hover Animations & Elevation */
+.province-card {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease;
+  will-change: transform, box-shadow;
+}
+
+.province-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px -10px rgba(74, 59, 50, 0.12), 0 10px 15px -5px rgba(74, 59, 50, 0.06);
+  border-color: rgba(162, 103, 68, 0.35);
+}
+
+.province-card .card-image {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.province-card:hover .card-image {
+  transform: scale(1.05);
+}
+
+/* Button Ripple & Elevation Effects */
+.btn-primary {
+  background-color: var(--color-terracotta);
+  color: #FFFFFF;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px 0 rgba(162, 103, 68, 0.25);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-terracotta-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px 0 rgba(162, 103, 68, 0.35);
+}
+
+.btn-secondary {
+  background-color: #FFFFFF;
+  color: var(--color-coffee);
+  border: 1px solid var(--color-border);
+  transition: all 0.25s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-cream);
+  border-color: var(--color-muted-brown);
+  color: var(--color-terracotta);
+}
+
+.btn-maps {
+  background-color: #F3F7EE;
+  color: var(--color-olive-earth);
+  border: 1px solid #D1DFC8;
+  transition: all 0.2s ease;
+}
+
+.btn-maps:hover {
+  background-color: var(--color-olive-earth);
+  color: #FFFFFF;
+  border-color: var(--color-olive-earth);
+  box-shadow: 0 4px 12px rgba(92, 111, 84, 0.25);
+}
+
+/* Interactive Modal Transitions */
+#province-modal {
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#province-modal.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+#province-modal:not(.active) {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#modal-dialog {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease;
+}
+
+#province-modal.active #modal-dialog {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+
+#province-modal:not(.active) #modal-dialog {
+  transform: scale(0.96) translateY(12px);
+  opacity: 0;
+}
+
+/* Modal Content Scrollbar */
+.modal-scrollable {
+  max-height: calc(90vh - 120px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+/* Filter Tag Pills */
+.filter-btn {
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.filter-btn.active {
+  background-color: var(--color-terracotta);
+  color: #FFFFFF;
+  border-color: var(--color-terracotta);
+  box-shadow: 0 2px 8px rgba(162, 103, 68, 0.25);
+}
+
+/* Hero Section Subtle Texture */
+.hero-gradient {
+  background: linear-gradient(180deg, rgba(44, 34, 30, 0.45) 0%, rgba(44, 34, 30, 0.72) 100%);
+}
+
+.earth-pattern {
+  background-color: #FAF7F2;
+  background-image: radial-gradient(#EDE4D7 0.85px, transparent 0.85px);
+  background-size: 20px 20px;
+}
+
+/* Focus States for Accessibility */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--color-terracotta);
+  outline-offset: 3px;
+}
+
+/* Print Styles */
+@media print {
+  .nav-glass, #back-to-top, .no-print {
+    display: none !important;
+  }
+}
